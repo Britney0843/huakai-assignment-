@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(215, 255, 255);
+  }
+  
+  .navigation {
+    overflow: hidden;
+    background-color: rgb(126, 210, 212);
+    
+  }
+  
+  .navigation a {
+    float: left;
+    color: #fdfdfd;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .resturant{
+    display: block;
+    margin-top: 1%;
+    margin-left: 15%; 
+    
+  }
+  .main{
+    margin-left: 15%; 
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 19%;
+    width: 70%;
+    height: 200%;
+    background-color:rgb(126, 210, 212) ;
+    
+  }
+  .map{
+    margin-left: 10%;
+  }
+.phone{
+  padding-right: 10%;
+  float: right;
+}
+  * {box-sizing:border-box}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 600%;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+    margin-left:20%;
+    
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+  }
+  .fade:hover{
+    transform: scale(1.4);
+  }
+  
+  .welcometext{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+   
+   
+  }
+  .paragraphtext{
+   text-align: center;
+  }
+  .paragraphtextcontact{
+    text-align: left;
+  }
+  .navigation a:hover {
+    background-color: rgb(137, 207, 240);
+    color: black;
+  }
+  
+  
+  .navigation .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navigation a:not(:first-child) {display: none;}
+    .navigation a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navigation.responsive {position: relative;}
+    .navigation.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navigation.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height:10%;
+    width: 100%;
+    background-color: rgb(126, 210, 212);
+    color: white;
+    text-align: left;
+  }

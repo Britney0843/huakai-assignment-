@@ -1,0 +1,123 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css\stylesheet.css">
+    <title>The Haukai Resturant</title>
+
+</head>
+
+<body>
+
+    <div class="navigation" id="mynavigation">
+    
+      <a href="Haukai.html"><img src="image/logo.png"  alt="The Haukai Resturant" style: width=10% ></a>
+      
+      <a href="#">Menu</a>
+      <a href="Bookings.html">Bookings</a>
+     <a href="contact.html">About us</a>
+      <a href="private/staff.html">Staff</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+   
+    <div class="main">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <br>
+                <img src="image/menustart.png" style="max-width:80%">
+            </br>
+                <br>
+                <div class="text"style="margin-right:  40%; text-align: center;">We are glad you came to view our menu please scroll using the arrows</div>
+             </br>
+              </div>
+
+            <div class="mySlides fade">
+                <br>
+                <img src="image/appetizers.png" style="max-width:80%; max-height: auto;">
+            </br>
+                <br>
+                <div class="text" style="margin-right:  40%; text-align: center;">Appetizers are the best to start you off some our favourites are the paua fritters fresh from the pacific ocean </div>
+             </br>
+              </div>
+              <div class="mySlides fade">
+                  <br>
+                <img src="image/mains.png" style="max-width:80%" >
+              </br>
+              <br>
+                <div class="text"style="margin-right:  40%; text-align: center;">Our mains are filling and fresh try with caution</div>
+                </br>
+              </div>
+              <div class="mySlides fade">
+                <br>
+              <img src="image/beverages.png" style="max-width:80%" >
+            </br>
+            <br>
+              <div class="text"style="margin-right:  40%; text-align: center;">refreshing drinks to go with your food enjoy some of the best ciders or coffee the choice is yours</div>
+              </br>
+            </div>
+
+                <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+
+        <div class="paragraphtext">
+           
+              
+
+   
+     </div>
+  
+    <script>
+    function myFunction() {
+      var x = document.getElementById("mynavigation");
+      if (x.className === "navigation") {
+        x.className += " responsive";
+      } else {
+        x.className = "navigation";
+      }
+    }
+    </script>
+
+
+<div class="footer">
+  <p style="margin-left: 100px;"> &copy; The Haukai Resturant designed up Britney</p>
+  <p style="margin-left: 100px;"><a href="contact.html" style="color:white">Privacy Statement</a></p>
+
+  </div>
+
+</body>
+
+  </html>
